@@ -4,7 +4,7 @@ import android.icu.text.NumberFormat
 import androidx.annotation.DrawableRes
 import androidx.annotation.Keep
 import com.plcoding.cryptotracker.crypto.domain.Coin
-import com.plcoding.cryptotracker.util.getDrawableIdForCoin
+import com.plcoding.cryptotracker.core.presentation.util.getDrawableIdForCoin
 import java.util.Locale
 
 @Keep
