@@ -24,6 +24,7 @@ fun CoinListScreen(
     state: CoinListState,
     modifier: Modifier = Modifier
 ) {
+
     if (state.isLoading) {
         Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             CircularProgressIndicator()
@@ -55,6 +56,7 @@ private fun CoinListScreenPreview() {
             coins = (1..100).map {
                 previousCoin.copy(id = it.toString())
             }
-        ), modifier = Modifier.background(MaterialTheme.colorScheme.background))
+        ),
+            modifier = Modifier.background(MaterialTheme.colorScheme.background))
     }
 }
