@@ -87,14 +87,14 @@ fun CoinListItem(
 private fun CoinListItemPreview() {
     CryptoTrackerTheme {
         CoinListItem(
-            coinUi = previousCoin,
+            coinUi = previewCoin,
             onClick = { /*TODO*/ },
             modifier = Modifier.background(MaterialTheme.colorScheme.primaryContainer)
         )
     }
 }
 
-internal val previousCoin = Coin(
+internal val previewCoin = Coin(
     id = "bitcoin",
     rank = 1,
     name = "Bitcoin",
